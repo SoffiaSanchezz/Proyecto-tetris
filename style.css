@@ -17,6 +17,12 @@ h1{
 h2{
     font-family: fantasy;
     color: #fff;
+    text-align: center;
+}
+.mt-2{
+    align-content: center;
+    
+    top: 100px;
 }
 .noselect{
     width: 150px;
@@ -210,7 +216,8 @@ button:active .button_top {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-    background: #e62222;   
+    background: #e62222;
+    left: 80%;   
 }
 .noselect .noselect .paausee{
     transition: 200ms;
@@ -256,7 +263,7 @@ button {
         /* Variables */
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
-    --button_outline_color: #000000;
+    --button_outline_color: #ed5564;
     font-size: 17px;
     font-weight: bold;
     border: none;
@@ -381,4 +388,7 @@ button:active .button_top {
     .fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
+}
+.punto{
+    background-color: #fff;
 }
