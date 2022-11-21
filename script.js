@@ -1,3 +1,4 @@
+import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
 // Esto es para el juego!!!
 
 class Game {
