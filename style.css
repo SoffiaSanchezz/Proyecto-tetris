@@ -2,6 +2,9 @@
 h1{
     font-family: 'poppins', sans-serif;
 }
+h2{
+    font-family: fantasy;
+}
 *{
     margin: 0%;
     overflow-x: hidden;
