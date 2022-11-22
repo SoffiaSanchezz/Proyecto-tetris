@@ -13,8 +13,8 @@ class Game {
     static CANVAS_HEIGHT = this.SQUARE_LENGTH * this.ROWS;
 
     //Aquí se define el color del cuadro y borde del mismo dentro en el juego
-    static EMPTY_COLOR = "5A6DD2";
-    static BORDER_COLOR = "5A6DD2";
+    static EMPTY_COLOR = "#5A6DD2";
+    static BORDER_COLOR = "#5A6DD2";
 
     //Cuando se elimina una fila por que esta ya se completo, esta estará de color ROJO!!!
     static DELETED_ROW_COLOR = "#FF0000";
@@ -484,7 +484,7 @@ y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a
                 ]);
             case 5:
                 /*
-               La Z (Cleveland Z)
+            La Z (Cleveland Z)
                **
                 **
                */
@@ -496,7 +496,7 @@ y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a
             case 6:
 
                 /*
-               La otra Z (Rhode island Z)
+            La otra Z (Rhode island Z)
                 **
                **
                */
@@ -508,7 +508,7 @@ y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a
             default:
 
                 /*
-               La T (Teewee)
+            La T (Teewee)
                 *
                ***
                */
