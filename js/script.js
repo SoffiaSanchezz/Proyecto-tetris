@@ -1,4 +1,4 @@
-import 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
+<script src="js/sweetalert.js"></script>
 // Esto es para el juego!!!
 
 class Game {
@@ -14,8 +14,8 @@ class Game {
     static CANVAS_HEIGHT = this.SQUARE_LENGTH * this.ROWS;
 
     //Aquí se define el color del cuadro y borde del mismo dentro en el juego
-    static EMPTY_COLOR = "5A6DD2";
-    static BORDER_COLOR = "5A6DD2";
+    static EMPTY_COLOR = "#ffffff";
+    static BORDER_COLOR = "#ffffff";
 
     //Cuando se elimina una fila por que esta ya se completo, esta estará de color ROJO!!!
     static DELETED_ROW_COLOR = "#FF0000";
