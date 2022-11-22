@@ -1,3 +1,4 @@
+
 // Esto es para el juego!!!
 
 class Game {
@@ -78,7 +79,6 @@ class Game {
         this.refreshScore();
         this.pauseGame();
     }
-
     showWelcome() {
         Swal.fire("Bienvenido", `Port casi perfecto del juego de Tetris en JavaScript.
 <br>
@@ -95,6 +95,7 @@ Gracias a <a target="_blank" href="https://www.youtube.com/channel/UCz6zvgkf6eKp
 y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a> por el sonido al completar una línea
 `);
     }
+    
 
 
     initControls() {

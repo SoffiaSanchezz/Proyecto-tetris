@@ -1,81 +1,114 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="./script.js"></script>
-    <link href="./img/tetrissss.webp" rel="icon" type="image/x-icon">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <title>El Multi verso de Tetris</title>
 </head>
 <body>
     <main>
         <div class="container-fluid">
             <div class="row">
+                
                 <div class="col-12 text-center">
                     <h1>El Multi verso de Tetris</h1>
-                    <h2 id="puntaje">Preciona <kbd>P</kbd> O Pulsa el Boton Para Comenzar</h2>
-                </div>
-                <div class="col-12 text-center">
+                    <h2 id="puntaje">Presiona <kbd>P</kbd> O Pulsa el Boton Para Comenzar</h2>
                     <canvas id="canvas"></canvas>
-                    <canvas id="canvas2"></canvas>
+                    
                     <!--Botones de tetris-->
                     <div class="mt-2">
 
-                    
-                        <!--boton de pausa-->
-                        <button class="noselect pause"><span class="text paausee">Pause</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg>
+                        <!--Boton Para iniciar -->
+                        <button id="btnIniciar" class="btn btn-success play">
+                            <i class="fas fa-play"></i>
+                            <div id="clip">
+                                <div id="leftTop" class="corner"></div>
+                                <div id="rightBottom" class="corner"></div>
+                                <div id="rightTop" class="corner"></div>
+                                <div id="leftBottom" class="corner"></div>
+                            </div>
+                            <span id="rightArrow" class="arrow"></span>
+                            <span id="leftArrow" class="arrow"></span>
+                        </button>
+
+
+                        <!--Boton para Pausar-->
+                        <button hidden id="btnPausar" class="btn btn-success play">
+                            <i class="fas fa-pause"></i>
+                            <div id="clip">
+                                <div id="leftTop" class="corner"></div>
+                                <div id="rightBottom" class="corner"></div>
+                                <div id="rightTop" class="corner"></div>
+                                <div id="leftBottom" class="corner"></div>
+                            </div>
+                            <span id="rightArrow" class="arrow"></span>
+                            <span id="leftArrow" class="arrow"></span>
+                        </button>
+
+                        <!--Boton Para Left-->
+                        <button id="btnIzquierda" class="btn btn-success">
+                            <span class="button_top">
+                                <i class="fas fa-arrow-left"></i>
                             </span>
                         </button>
+
+
+                        <!--Boton Para abajo-->
+                        <button id="btnAbajo" class="btn btn-success">
+                            <span class="button_top">
+                            <i class="fas fa-arrow-down"></i>
+                        </span>
+                        </button>
+
+                        <!--Boton para derecha-->
+                        <button id="btnDerecha" class="btn btn-success">
+                            <span class="button_top">
+                            <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
+
+                        <!--Boton de Rotar-->
+                        <button id="btnRotar" class="btn btn-success">
+                            <span class="button_top">
+                            <i class="fas fa-undo"></i>
+                            </span>
+                        </button>
+                        <button class="btn btn-danger" id="reset">Reset</button>
+
                         
-                        <!--boton de izquierda-->
-                        <button class="botton">
-                            <span class="button_top">
-                                <i class="fa fa-arrow-left"></i>
-                            </span>
-                        </button>
-
-                        <!--Boton de la hacia abajo-->
-                        <button class="botton">
-                            <span class="button_top">
-                                <i class="fa fa-arrow-down"></i>
-                            </span>
-                        </button>
-
-                        <!--Boton de la hacia abajo-->
-                        <button class="botton">
-                            <span class="button_top">
-                                <i class="fa fa-arrow-right"></i>
-                            </span>
-                    </button>
-
-                        <!--Boton de rotacion-->
-                        <button class="botton">
-                            <span class="button_top">
-                                <i class="fa fa-undo"></i>
-                            </span>
-                    </button>
-
-                        <!--boton de Reset-->
-                        <a class="fancy" href="#">
-                            <span class="top-key"></span>
-                            <span class="text">Reset
-                            </span>
-                            <span class="bottom-key-1"></span>
-                            <span class="bottom-key-2"></span>
-                        </a>
                     </div>
+                </div>
+            </div>
         </div>
     </main>
-            <a class="text-white" href="//parzibyte.me/blog">Parzibyte</a>
-            &nbsp;|&nbsp;
-            <a target="_blank" class="text-white" href="//github.com/parzibyte/tetris-javascript">
-                Ver código fuente
-            </a>
-</footer>
-</body>
-</html>
 
+    <footer>
+        <svg width="92" height="91" viewBox="0 0 92 91" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="92" height="91" fill="url(#pattern0)"/>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_44_19" transform="translate(-0.271959 -0.0945274) scale(0.00450243 0.00425603)"/>
+                </pattern>
+            </defs>
+        </svg>
+
+    </footer>
+
+<script src="js/sweetalert2.min.js"></script>
+<script src="js/script.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+
+
+</body>
+
+</html>
