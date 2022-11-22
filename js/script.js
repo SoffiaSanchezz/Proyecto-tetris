@@ -1,4 +1,4 @@
-<script src="js/sweetalert.js"></script>
+
 // Esto es para el juego!!!
 
 class Game {
