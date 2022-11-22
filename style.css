@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
 
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
+
 
 
 
 h1{
     font-family: 'poppins', sans-serif;
 }
+
 *{
     margin: 0%;
     overflow-x: hidden;
@@ -88,7 +89,7 @@ button {
         /* Variables */
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
-    --button_outline_color: #000000;
+    --button_outline_color: #ED5564;
     font-size: 17px;
     font-weight: bold;
     border: none;
@@ -224,8 +225,7 @@ button:active .button_top {
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-    background: #e62222;
-    left: 80%;   
+    background: #e62222;   
 }
 .noselect .noselect .paausee{
     transition: 200ms;
@@ -271,7 +271,7 @@ button {
         /* Variables */
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
-    --button_outline_color: #ed5564;
+    --button_outline_color: #ED5564;
     font-size: 17px;
     font-weight: bold;
     border: none;
@@ -396,7 +396,4 @@ button:active .button_top {
     .fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
-}
-.punto{
-    background-color: #fff;
 }
