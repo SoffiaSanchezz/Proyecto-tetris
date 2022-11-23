@@ -1,4 +1,3 @@
-
 // Esto es para el juego!!!
 
 class Game {
@@ -82,21 +81,28 @@ class Game {
     showWelcome() {
         Swal.fire("Bienvenido", `Port casi perfecto del juego de Tetris en JavaScript.
 <br>
-<strong>Controles:</strong>
-<ul class="list-group">
-<li class="list-group-item"> <kbd>P</kbd><br>Pausar o reanudar </li>
-<li class="list-group-item"> <kbd>R</kbd><br>Rotar</li>
-<li class="list-group-item"> <kbd>Flechas de dirección</kbd><br>Mover figura hacia esa dirección</li>
-<li class="list-group-item"><strong>También puedes usar los botones si estás en móvil</strong></li>
+<strong s>Controles:</strong>
+<ul class="list-group" style="border:2px solid #622edf">
+
+<li class="list-group-item" style="background-color: #ad92eb83; border= 5px rgba(238, 174, 202, 0.405)"> <kbd style="background-color:#622edf"><b>P<b/></kbd><br>Pausar o reanudar </li>
+
+<li class="list-group-item" style="background-color: #ad92eb83;"> 
+<kbd style="background-color:#622edf">R</kbd><br>Rotar</li>
+
+<kbd style="background-color:#622edf">Flechas de dirección</kbd><br>Mover figura hacia esa dirección</li>
+<li class="list-group-item" style="color:#8553f1"><strong>También puedes usar los botones si estás en móvil</strong></li>
 </ul>
-<strong>Creado por <a href="https://parzibyte.me/blog">Parzibyte</a></strong>
 <br>
-Gracias a <a target="_blank" href="https://www.youtube.com/channel/UCz6zvgkf6eKpgqlUZQstOtQ">Bulby</a> por la música de fondo
-y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a> por el sonido al completar una línea
+<strong style="color:#8553f1">Creado por <a href="https://github.com/SoffiaSanchezz"></a>
+<img src="./img/Logos_SS con no.png" alt="Logos_SS" style="width:20%">
+</strong>
+
+<strong> y<a href="https://github.com/SoffiaSanchezz"></a>
+<img src="./img/LOGO (8).png" alt="logo" style="width:40%">
+</strong>
+<br>
 `);
     }
-    
-
 
     initControls() {
         document.addEventListener("keydown", (e) => {
@@ -740,3 +746,4 @@ const game = new Game("canvas");
 document.querySelector("#reset").addEventListener("click", () => {
     game.askUserConfirmResetGame();
 });
+

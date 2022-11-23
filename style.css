@@ -560,3 +560,7 @@ button:active .button_top {
         transform: translateX(-10px);
         }
     }      
+.fa-arrow{
+    background-color: #b092f7;
+    color: #ED5564;
+}
