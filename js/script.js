@@ -4,11 +4,11 @@
 
 class Game {
     // Longitud de los cuadrados en pixels
-    static SQUARE_LENGTH = screen.width > 420 ? 30 : 10;
+    static SQUARE_LENGTH = screen.width > 420 ? 50 : 20;
     // aqui se definen el numero de columnas dentro del juego
-    static COLUMNS = 12;
+    static COLUMNS = 20;
     // aqui se definen el numero de filas dentro del juego
-    static ROWS = 8;
+    static ROWS = 15;
 
     //AQUI SE DEFINEN LAS DIMENSIONES DEL CANVAS, ANCHO Y ALTO
     static CANVAS_WIDTH = this.SQUARE_LENGTH * this.COLUMNS;
