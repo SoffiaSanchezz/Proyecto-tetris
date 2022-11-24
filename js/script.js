@@ -1,21 +1,27 @@
+// prueba
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum;
+
 
 // Esto es para el juego!!!
 
 class Game {
     // Longitud de los cuadrados en pixels
-    static SQUARE_LENGTH = screen.width > 390 ? 30 : 20;
+    static SQUARE_LENGTH = screen.width > 390 ? 30 : 18;
     // aqui se definen el numero de columnas dentro del juego
-    static COLUMNS = 40;
+    static COLUMNS = 20;
     // aqui se definen el numero de filas dentro del juego
-    static ROWS = 20;
+    static ROWS = 18;
 
     //AQUI SE DEFINEN LAS DIMENSIONES DEL CANVAS, ANCHO Y ALTO
     static CANVAS_WIDTH = this.SQUARE_LENGTH * this.COLUMNS;
     static CANVAS_HEIGHT = this.SQUARE_LENGTH * this.ROWS;
 
     //Aquí se define el color del cuadro y borde del mismo dentro en el juego
-    static EMPTY_COLOR = "#0c1a49";
-    static BORDER_COLOR = "#0c1a49";
+    static EMPTY_COLOR = "#622edf";
+    static BORDER_COLOR = "#622edf";
 
     //Cuando se elimina una fila por que esta ya se completo, esta estará de color ROJO!!!
     static DELETED_ROW_COLOR = "#FF0000";
@@ -95,7 +101,7 @@ Gracias a <a target="_blank" href="https://www.youtube.com/channel/UCz6zvgkf6eKp
 y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a> por el sonido al completar una línea
 `);
     }
-    
+
 
 
     initControls() {
@@ -211,7 +217,7 @@ y a <a href="https://freesound.org/people/grunz/sounds/109662/">Freesound.org</a
 
     //Esta función permite determina cual el jugador pierde, entonces por defecto se deja que cuando de arriba hacia abajo falte un cuadradito, el jugador ha perdido.
     playerLoses() {
-        
+
         for (const point of this.existingPieces[1]) {
             if (point.taken) {
                 return true;
