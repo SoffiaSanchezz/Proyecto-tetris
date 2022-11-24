@@ -1,20 +1,22 @@
+
+
 // Esto es para el juego!!!
 
 class Game {
     // Longitud de los cuadrados en pixels
-    static SQUARE_LENGTH = screen.width > 390 ? 30 : 20;
+    static SQUARE_LENGTH = screen.width > 420 ? 30 : 18;
     // aqui se definen el numero de columnas dentro del juego
-    static COLUMNS = 40;
+    static COLUMNS = 12;
     // aqui se definen el numero de filas dentro del juego
-    static ROWS = 20;
+    static ROWS = 12;
 
     //AQUI SE DEFINEN LAS DIMENSIONES DEL CANVAS, ANCHO Y ALTO
     static CANVAS_WIDTH = this.SQUARE_LENGTH * this.COLUMNS;
     static CANVAS_HEIGHT = this.SQUARE_LENGTH * this.ROWS;
 
     //Aquí se define el color del cuadro y borde del mismo dentro en el juego
-    static EMPTY_COLOR = "#5A6DD2";
-    static BORDER_COLOR = "#5A6DD2";
+    static EMPTY_COLOR = "#622edf";
+    static BORDER_COLOR = "#622edf";
 
     //Cuando se elimina una fila por que esta ya se completo, esta estará de color ROJO!!!
     static DELETED_ROW_COLOR = "#FF0000";
@@ -86,7 +88,7 @@ class Game {
 
 <li class="list-group-item" style="background-color: #ad92eb83; border= 5px rgba(238, 174, 202, 0.405)"> <kbd style="background-color:#622edf"><b>P<b/></kbd><br>Pausar o reanudar </li>
 
-<li class="list-group-item" style="background-color: #ad92eb83;"> 
+<li class="list-group-item" style="background-color: #ad92eb83;">
 <kbd style="background-color:#622edf">R</kbd><br>Rotar</li>
 
 <kbd style="background-color:#622edf">Flechas de dirección</kbd><br>Mover figura hacia esa dirección</li>
@@ -103,6 +105,8 @@ class Game {
 <br>
 `);
     }
+
+
 
     initControls() {
         document.addEventListener("keydown", (e) => {
@@ -217,7 +221,7 @@ class Game {
 
     //Esta función permite determina cual el jugador pierde, entonces por defecto se deja que cuando de arriba hacia abajo falte un cuadradito, el jugador ha perdido.
     playerLoses() {
-        
+
         for (const point of this.existingPieces[1]) {
             if (point.taken) {
                 return true;
@@ -746,4 +750,3 @@ const game = new Game("canvas");
 document.querySelector("#reset").addEventListener("click", () => {
     game.askUserConfirmResetGame();
 });
-
