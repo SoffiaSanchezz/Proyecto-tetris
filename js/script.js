@@ -4,9 +4,9 @@
 
 class Game {
     // Longitud de los cuadrados en pixels
-    static SQUARE_LENGTH = screen.width > 420 ? 50 : 20;
+    static SQUARE_LENGTH = screen.width > 420 ? 40 : 20;
     // aqui se definen el numero de columnas dentro del juego
-    static COLUMNS = 20;
+    static COLUMNS = 10;
     // aqui se definen el numero de filas dentro del juego
     static ROWS = 15;
 
