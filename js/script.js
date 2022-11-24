@@ -1,19 +1,14 @@
-// prueba
-function sum(a, b) {
-  return a + b;
-}
-module.exports = sum;
 
 
 // Esto es para el juego!!!
 
 class Game {
     // Longitud de los cuadrados en pixels
-    static SQUARE_LENGTH = screen.width > 390 ? 30 : 18;
+    static SQUARE_LENGTH = screen.width > 420 ? 30 : 18;
     // aqui se definen el numero de columnas dentro del juego
-    static COLUMNS = 20;
+    static COLUMNS = 12;
     // aqui se definen el numero de filas dentro del juego
-    static ROWS = 18;
+    static ROWS = 12;
 
     //AQUI SE DEFINEN LAS DIMENSIONES DEL CANVAS, ANCHO Y ALTO
     static CANVAS_WIDTH = this.SQUARE_LENGTH * this.COLUMNS;
