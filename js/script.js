@@ -83,7 +83,7 @@ class Game {
     showWelcome() {
         Swal.fire("Bienvenido", `Port casi perfecto del juego de Tetris en JavaScript.
 <br>
-<strong s>Controles:</strong>
+<strong>Controles:</strong>
 <ul class="list-group" style="border:2px solid #622edf">
 
 <li class="list-group-item" style="background-color: #ad92eb83; border= 5px rgba(238, 174, 202, 0.405)"> <kbd style="background-color:#622edf"><b>P<b/></kbd><br>Pausar o reanudar </li>
