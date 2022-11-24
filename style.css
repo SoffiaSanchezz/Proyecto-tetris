@@ -28,63 +28,6 @@ h2{
     color: #fff;
     text-align: center;
 }
-.mt-2{
-    align-content: center;
-
-    top: 100px;
-}
-.noselect{
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    background: red;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
-    background: #e62222;   
-}
-.noselect .noselect .paausee{
-    transition: 200ms;
-}
-.noselect .text{
-    transform: translateX(35px);
-    color: white;
-    font-weight: bold;
-}
-.noselect .icon {
-    position: absolute;
-    border-left: 1px solid #c41b1b;
-    transform: translateX(110px);
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.noselect svg {
-    width: 15px;
-    fill: #eee;
-}
-.noselect:hover {
-    background: #ff3636;
-}
-.noselect:hover .text {
-    color: transparent;
-    transform: translateX(0);
-}
-.noselect:hover .icon {
-    width: 150px;
-    border-left: none;
-    transform: translateX(0);
-}
-.noselect:focus {
-    outline: none;
-}
-.noselect:active .icon svg {
-    transform: scale(0.8);
-}
 button {
         /* Variables */
     --button_radius: 0.75em;
@@ -559,7 +502,4 @@ button:active .button_top {
         transform: translateX(-10px);
         }
     }      
-.fa-arrow{
-    background-color: #b092f7;
-    color: #ED5564;
-}
+
