@@ -35,6 +35,13 @@ Que cosas necesitas para instalar el software y como verla en el dispositivo loc
 ```bash
   - https://proyecto-tetris.vercel.app/
 ```
+## Documentacion del proyecto 📄
+
+En la documentacion se baso en las dificulatades que se presentaron a lo largo del proyecto y las soluciones que encontramos para llegar al resultado final. 
+
+```bash
+  - https://docs.google.com/document/d/11pJ0c5f5gEBqoqsuPKpvgoDrOGF3OFw8prgAFuyP350/edit?usp=sharing
+```
 
 ## Construido con 🛠️
 
