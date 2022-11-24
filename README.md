@@ -26,7 +26,7 @@ Que cosas necesitas para instalar el software y como verla en el dispositivo loc
 ### Instalación 🔧
 
 - Como se debe observar en el despliegue
-![Version]()
+![Diferentes Versiones](img/Responsive.jfif)
 
 
 ## Despliegue 📦
