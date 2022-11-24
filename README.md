@@ -33,7 +33,7 @@ Que cosas necesitas para instalar el software y como verla en el dispositivo loc
 
 - El despliege esta apto para ejecutarse 
 ```bash
-  - link del despliege
+  - https://proyecto-tetris.vercel.app/
 ```
 
 ## Construido con 🛠️
